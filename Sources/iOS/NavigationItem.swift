@@ -161,18 +161,6 @@ extension UINavigationItem {
 		return navigationItem.backButton
 	}
 	
-    /// Title text.
-	@nonobjc
-	public var title: String? {
-		get {
-			return titleLabel.text
-		}
-		set(value) {
-			titleLabel.text = value
-            navigationItem.reload()
-		}
-	}
-    
 	/// Title Label.
 	public var titleLabel: UILabel {
 		return navigationItem.titleLabel
